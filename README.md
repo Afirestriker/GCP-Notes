@@ -27,8 +27,8 @@ These notes cover various topics related to using the Google Cloud Platform (GCP
 
 ## Introduction to Cloud
 
-Cloud in simple term, is just a set of tool that help you as a developer spend less time managing and more time creating.
-  [Being Creative as a developer]
+Cloud in simple term, is just a set of tool that help you as a developer spend less time managing and more time creating.  
+[Being Creative as a developer]
 
 
 ## Introduction to GCP
