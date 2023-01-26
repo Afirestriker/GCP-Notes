@@ -9,10 +9,13 @@ These notes cover various topics related to using the Google Cloud Platform (GCP
 - [Creating a GCP Project](#creating-a-gcp-project)
 - [GCP Console](#google-cloud-console)
 - [GCP Resources](#google-cloud-resources)
-- [GCP Compute Services](#gcp-compute-services)
+- [GCP Services](#gcp-services)
     - [Identity and Access Management](#identity-and-access-management)
-    - [Compute Engine](#compute-engine)
-    - [Kubernetes Engine](#kubernetes-engine)
+    - [Billing](#billing)
+    - [GCP Compute Services](#gcp-compute-services)
+        - [Compute Engine](#compute-engine)
+        - [Kubernetes Engine](#kubernetes-engine)
+- [GCP Cloud Shell](#gcp-cloud-shell)
 
 ## Introduction to Cloud
 
@@ -53,9 +56,7 @@ Google cloud console is a powerful graphical (GUI) tool which help to manage Goo
     - **Folders** can also contain projects and sub-folders for added flexibility.
 3. This heirarchy provides the basis for access control policy inheritance.
 
-## GCP Compute Services
-
-GCP offers a variety of compute services that you can use to run your applications.
+## GCP Services
 
 ### Identity and Access Management
 
@@ -64,10 +65,31 @@ GCP offers a variety of compute services that you can use to run your applicatio
 3. Using Cloud IAM and Admin section we can add users, groups, or service accounts and assign them any # number of roles to grant the permission they need.
 4. There are many predefiend roles other than admin and developers.
 
+### Billing
+
+1. GCP Billing is a service that helps manage and track the cost of using GCP resources.
+2. The Biling section/service is where we manage **billing account** and link our projects to them.
+    - A billing account is essentially a payment payment method (one or more cerdit card information or bank details).
+3. A project that does not have a associate billing account or not the billing accounts is not enable, will just not be able to use GCP products beyond their free tiers.
+4. In Billing section, we can monitor and control our spending on resources by setting budget alerts to help mange costs.
+5. We can also view billing history and usage details.
+6. We cna also set up triggered actions for project or accounts as well.
+7. We can also generates billing exports as well as reports to better understand our spending.
+8. We can also transfer billing ownership to different accounts.
+
+## GCP Compute Services
+
 ### Compute Engine
+
+GCP offers a variety of compute services that you can use to run your applications.
 
 [Compute Engine](https://cloud.google.com/compute/) is a service that allows you to create and run virtual machines (VMs) on GCP. With Compute Engine, you can choose from a variety of machine types, operating systems, and disk types, and you can scale your VMs up or down as needed.
 
 ### Kubernetes Engine
 
 [Kubernetes Engine](https://cloud.google.com/kubernetes-engine/) is a service that allows you to run and manage containers on GCP. With Kubernetes Engine, you can create and manage clusters of containerized applications, and you can scale your clusters up or down as needed.
+
+## GCP Cloud Shell
+
+1. Google cloud shell provides us with command line access (CLI) to GCP resources directly from browser without having the need to install anything.
+2. Google cloud shell is accessible from the browser in cloud console and is powered by a small virtual machine with persistdent disk space and up-to-date software for all the development needs.
